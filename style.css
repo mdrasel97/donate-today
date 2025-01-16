@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+
+
+
+/* primary work  */
+.width_primary{
+    width: 90%;
+    margin: 50px auto;
+}
+.hadding_primary{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+}
+
+.hadding_sacendary{
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+}
+.btn_primary{
+    border-radius: 5px;
+    background: rgb(255, 89, 89);
+    color: rgb(255, 255, 255);
+    padding: 16px 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    border: none;
+    margin: 15px 0px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.btn_primary:hover{
+    background-color: blueviolet;
+}
+.paragraph_primary{
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+/* banner_container */
+.banner_container{
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(0.00deg, rgb(20, 20, 20),rgba(20, 20, 20, 0) 140%), url("./images/banner-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannar_content{
+    width: 40%;
+    text-align: center;
+}
+
+/* taka container  */
+.taka_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0px;
+
+}
+.taka_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: rgb(250, 250, 250);
+    padding: 40px 24px;
+    font-size: 25px;
+    color: rgb(112, 112, 112);
+}
+.taka_content:hover{
+    border: 2px solid rgb(255, 89, 89);
+    background: rgb(255, 238, 238);
+}
+.active{
+    border: 2px solid rgb(255, 89, 89);
+    background: rgb(255, 238, 238); 
+}
+.Donate_Today_container .Amount_input{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid rgb(218, 218, 218);
+    text-align: center;
+}
+.donate_btn{
+    text-align: center;
+}
+/* donate plan card */
+.donateplan_card_container{
+    width: 80%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.donateplan_card_content{
+    width: 30%;
+    border-radius: 5px;
+    background: rgba(79, 157, 166, 0.1);
+    padding: 25px 15px;
+}
+.donateplan_card_content img, p, h4{
+    margin: 10px 0px;
+}
+
+/* your_donation_container */
+.your_donation_container1,
+.your_donation_container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0px;
+}
+.donation_text_content{
+    text-align: left;
+}
+.donation_img_content{
+    width: 50%;
+}
+
+.donation_img_content img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* updates_container */
+.updates_container{
+    width: 60%;
+    margin: 40px auto;
+}
+.input_area{
+    border-radius: 5px;
+    background: rgb(255, 244, 214);
+    padding: 70px 40px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    /* background-color: rgb(200, 21, 244); */
+}
+.input_area input{
+width: 70%;
+padding: 12px 10px;
+border-radius: 12px 0px 0px 12px;
+border: none;
+background-color: #D9D9D9;
+}
+.input_area button{
+    padding: 12px 15px;
+    border-radius: 0px 12px 12px 0px;
+    border: none;
+    background-color: #FF5959;
+    color: rgb(255, 255, 255);
+    margin-left: -5px;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.footer_container h1{
+    color: rgb(255, 89, 89);
+    font-family: Lobster;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+}
+
+@media all and (max-width: 576px) {
+    .hadding_primary{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .bannar_content{
+        width: 80%;
+    }
+    .taka_container{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        font-size: 25px;
+    }
+    .donateplan_card_container{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        margin: auto;
+    }
+    .donateplan_card_content{
+        width: 100%;
+    }
+    .your_donation_container1,
+.your_donation_container2{
+    flex-direction: column;
+}
+.your_donation_container1{
+    flex-direction: column-reverse;
+}
+.donation_img_content{
+    width: 90%;
+}
+.updates_container{
+    width: 90%;
+}
+.input_area{
+    width: 100%;
+}
+}
