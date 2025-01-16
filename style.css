@@ -249,10 +249,13 @@ footer{
     width: 90%;
 }
 .updates_container{
-    width: 90%;
+    width: 100%;
 }
 .input_area{
     width: 100%;
-    padding: 20px;
+    padding: 50px 10px;
+}
+.input_area input{
+    
 }
 }
